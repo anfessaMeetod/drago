@@ -1,0 +1,68 @@
+
+//
+// Variables
+// --------------------------------------------------
+$emBase: 16px !default;
+
+//$baseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$baseFont: 'Khula', sans-serif;
+$headingColor: inherit;
+
+$baseFontSize: 15px;
+$smallFontSize: 12px;
+$largeFontSize: 19px;
+
+
+$maxWidth: 980px !default;
+$minWidth: 300px !default;
+$defaultPadding: 40px !default;
+
+$padding: 40px;
+$doublePadding: $padding * 2;
+$negativePadding: -1 * $padding;
+$negativeDoublePadding: -1 * $doublePadding;
+
+$halfPadding: $padding / 2;
+$quarterPadding: $padding / 4;
+
+$negativeHalfPadding: -1 * $halfPadding;
+$negativeQuarterPadding: -1 * $quarterPadding;
+
+$inputHeight: 48px;
+
+$buttonHeight: 48px;
+
+$siteHeaderHeight: 100px;
+$siteHeaderHeight-small: 70px;
+
+
+// To enable support for browsers that do not support @media queries,
+// (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
+// Create a separate stylesheet served exclusively to these browsers,
+// meaning @media queries will be rasterized, relying on the cascade itself
+$mq-responsive: true;
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$mq-breakpoints: (
+    tiny:       320,
+    small:      460px,
+    medium:     740px,
+    mediumLarge: 820px,
+    large:      991px,
+    wide:       1300px,
+    ultraWide:  1600px
+);
+
+// Define the breakpoint from the $mq-breakpoints list that should
+// be used as the target width when outputting a static stylesheet
+// (i.e. when $mq-responsive is set to 'false').
+$mq-static-breakpoint: desktop;
+
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width, e.g. (mobile, tablet, desktop).
+//$mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
+
+
