@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Drago - Almost like Dragon, the seed</title>
 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,6 +19,35 @@
   </head>
   <body>
     <h1>Drago</h1>
+
+    <section class="hero">
+      <h1>Hero</h1>
+
+    </section>
+
+    <section class="about">
+      <h2>About</h2>
+
+    </section>
+
+    <section class="how">
+      <h2>How it works</h2>
+
+    </section>
+
+    <section class="faq">
+      <h2>FAQ.</h2>
+
+    </section>
+
+    <section class="lets-talk">
+      <h2>Lets talk</h2>
+
+    </section>
+
+    <footer>
+      <h2>Footer</h2>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

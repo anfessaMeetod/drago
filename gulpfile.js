@@ -131,8 +131,8 @@ gulp.task('reload', function() {
 gulp.task('upload', function() {
 
 	var conn = ftp.create( {
-			host:     'ftp.liljastransport.se',
-			user:     '134769_dev_trans',
+			host:     'ftp.anfessa.com',
+			user:     '134769_drago',
 			password: 'index1therock',
 			parallel: 10,
 			log: gutil.log
