@@ -8,6 +8,216 @@ Tags:
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+/* line 1, /Users/anfessa/http/drago/sass/core/_settings.scss */
+body {
+  background-color: #1B1B1B;
+  background-image: url("../images/bg-map.png"); }
+
+/* line 5, /Users/anfessa/http/drago/sass/core/_settings.scss */
+.container {
+  max-width: 1000px;
+  margin: 0 auto; }
+
 /* line 1, /Users/anfessa/http/drago/sass/core/_typography.scss */
 body {
   font-family: "Khula", sans-serif; }
+
+/* line 5, /Users/anfessa/http/drago/sass/core/_colors.scss */
+.bg-green {
+  background-color: #37AB4F; }
+
+/* line 8, /Users/anfessa/http/drago/sass/core/_colors.scss */
+.bg-black {
+  background-color: black; }
+
+/* line 11, /Users/anfessa/http/drago/sass/core/_colors.scss */
+.bg-grey {
+  background-color: #525252; }
+
+/* line 1, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+  /* line 10, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+  .hero .hero-inner {
+    position: relative;
+    width: 100%;
+    height: 500px; }
+  /* line 18, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+  .hero #backplate {
+    position: absolute;
+    width: 450px;
+    height: 560px;
+    background-image: url("../images/pattern.png");
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    align-items: flex-end;
+    padding-left: 40px;
+    padding-bottom: 40px; }
+  /* line 29, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+  .hero .block {
+    padding: 80px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    margin-top: 90px;
+    background-image: url("../images/map.png");
+    background-size: cover;
+    color: #fff;
+    padding-left: 240px;
+    width: 450px;
+    position: relative;
+    margin-left: 250px; }
+    /* line 41, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+    .hero .block .floating-phone {
+      position: absolute;
+      left: -100px;
+      width: 250px;
+      top: 20px; }
+    /* line 47, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+    .hero .block .badges {
+      max-width: 150px; }
+
+/* line 2, /Users/anfessa/http/drago/sass/modules/_about.scss */
+.about .block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  padding: 80px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  color: #fff;
+  -webkit-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  -khtml-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(55, 171, 79, 0.6); }
+  /* line 11, /Users/anfessa/http/drago/sass/modules/_about.scss */
+  .about .block .half {
+    flex: 1; }
+    /* line 14, /Users/anfessa/http/drago/sass/modules/_about.scss */
+    .about .block .half img {
+      max-width: 450px; }
+
+/* line 3, /Users/anfessa/http/drago/sass/modules/_howto.scss */
+.how .textarea {
+  padding-bottom: 80px; }
+
+/* line 7, /Users/anfessa/http/drago/sass/modules/_howto.scss */
+.how .flow {
+  color: #fff;
+  margin-top: 160px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  /* line 14, /Users/anfessa/http/drago/sass/modules/_howto.scss */
+  .how .flow .half {
+    flex: 1;
+    padding: 40px; }
+  /* line 19, /Users/anfessa/http/drago/sass/modules/_howto.scss */
+  .how .flow .screenholder {
+    padding: 40px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    -webkit-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+    -khtml-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: -5px 10px rgba(0, 0, 0, 0.3); }
+
+/* line 1, /Users/anfessa/http/drago/sass/modules/_blocks.scss */
+.block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  padding: 80px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  color: #fff;
+  -webkit-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  -khtml-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(55, 171, 79, 0.6); }
+  /* line 10, /Users/anfessa/http/drago/sass/modules/_blocks.scss */
+  .block .half {
+    flex: 1;
+    padding: 40px; }
+
+/* line 1, /Users/anfessa/http/drago/sass/modules/lets-talk.scss */
+.lets-talk {
+  margin-top: 80px; }

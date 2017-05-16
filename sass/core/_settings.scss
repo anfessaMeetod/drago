@@ -1,3 +1,11 @@
+body {
+	background-color: #1B1B1B;
+	background-image: url('../images/bg-map.png');
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 
 //
 // Variables
@@ -11,7 +19,6 @@ $headingColor: inherit;
 $baseFontSize: 15px;
 $smallFontSize: 12px;
 $largeFontSize: 19px;
-
 
 $maxWidth: 980px !default;
 $minWidth: 300px !default;

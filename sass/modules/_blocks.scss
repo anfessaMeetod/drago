@@ -1,0 +1,14 @@
+.block {
+		@include flexbox;
+		@include align-items(center);
+		padding: $doublePadding;
+		@include border-radius(8px);
+		color: #fff;
+		@include box-shadow(-5px 10px rgba(0,0,0,.3));
+		background-color: rgba(55,171,79,.6);
+
+		.half {
+			flex: 1;
+			padding: $padding;
+		}
+}

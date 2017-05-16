@@ -1,0 +1,26 @@
+.how {
+
+	.textarea {
+		padding-bottom: $doublePadding;
+	}
+
+		.flow {
+			color: #fff;
+		
+		margin-top: $doublePadding *2 ;
+
+		@include flexbox;
+
+		.half {
+			flex: 1;
+			padding: $padding;
+
+		}
+		.screenholder {
+			padding: $padding;
+			@include border-radius(8px);
+			@include box-shadow(-5px 10px rgba(0,0,0,.3));
+		}
+
+	}
+}
