@@ -1,0 +1,27 @@
+.faq {
+
+	.block {
+		//@include align-items(flex-start);
+	}
+
+	.heading {
+		width: 100%;
+		padding-left: $padding;
+
+		@include mq($until: medium) {
+			padding-left: 0;
+		}
+	}
+	.half {
+		@include mq($from: medium) {
+			padding: 0 $padding;
+		}
+	}
+	h4 {
+		margin-top: 30px;
+		margin-bottom: 5px;
+	}
+	p {
+		margin-top: 5px;
+	}
+}

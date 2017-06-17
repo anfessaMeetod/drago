@@ -2,13 +2,24 @@
 		@include flexbox;
 		@include align-items(center);
 		padding: $doublePadding;
-		@include border-radius(8px);
+		@include border-radius(15px);
 		color: #fff;
 		@include box-shadow(-5px 10px rgba(0,0,0,.3));
 		background-color: rgba(55,171,79,.6);
+		@include flex-wrap(wrap);
+		@include box-sizing(border-box);
 
+		@include mq($until: medium) {
+			padding: $padding $halfPadding;
+		}
+		
 		.half {
 			flex: 1;
 			padding: $padding;
+
+			@include mq($until: medium) {
+				padding: 0;
+				flex: 1 1 auto;
+			}
 		}
 }

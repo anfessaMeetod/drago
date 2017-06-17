@@ -9,7 +9,6 @@ License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-
 // Plugins
 
 @import "plugins/mq";
@@ -20,7 +19,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "core/mixins";
 @import "core/typography";
 @import "core/colors";
-
+@import "core/forms";
 
 
 // Modules
@@ -29,6 +28,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "modules/howto";
 @import "modules/blocks";
 @import "modules/lets-talk";
+@import "modules/faq";
+@import "modules/footer";
+@import "modules/map";
+@import "modules/layout";
 
 
 

@@ -1,0 +1,14 @@
+.lets-talk{
+	margin-top: $doublePadding;
+	width: 100%;
+
+	.block {
+		background-color: $green;
+	
+
+	@include mq($from: medium) {
+		//	@include box-sizing(border-box);
+			padding: 0 $padding;
+		}
+	}
+}

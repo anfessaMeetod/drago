@@ -1,0 +1,12 @@
+.container {
+	@include box-sizing(border-box);
+	padding: $halfPadding;
+		// @include mq($from: large) {
+		// 	padding: $halfPadding;
+		// }
+}
+.hidden-xs {
+	@include mq($until: medium) {
+		display: none;
+	}
+}

@@ -1,0 +1,20 @@
+.footer {
+	text-align: center;
+	margin-top: -175px;
+	background-image: url('../images/pattern_footer.jpg');
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	position: relative;
+	padding: $padding 0;
+	z-index: -1;
+	padding-top: 250px;
+
+	.stores {
+		margin-top: $padding;
+		margin-bottom: $padding;
+		.badges {
+			max-width: 150px;
+		}
+	}
+}

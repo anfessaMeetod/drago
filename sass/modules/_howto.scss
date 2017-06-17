@@ -3,23 +3,113 @@
 	.textarea {
 		padding-bottom: $doublePadding;
 	}
+	p {
+		margin-top: 5px;
+	}
 
-		.flow {
-			color: #fff;
-		
-		margin-top: $doublePadding *2 ;
+	.flow {
+		color: #fff;
+		margin-top: $doublePadding * 2 ;
+		width: 100%;
+ 		@include flexbox;
+		@include flex-wrap(wrap);
 
-		@include flexbox;
-
-		.half {
-			flex: 1;
-			padding: $padding;
-
+		@include mq($until: medium) {
+			margin-top: $doublePadding;
 		}
+
+		#top {
+			@include mq($from: medium) {
+				order: 1;
+				flex-basis: 100%;
+				padding-left: $padding;
+
+				.textarea {
+					width: 40%;
+				}
+			}
+		}
+		#first {			
+
+			@include mq($from: medium) {
+				order: 3;
+				flex-basis: 50%;
+				@include box-sizing(border-box);
+				padding-left: $doublePadding;
+				padding-right: $padding;
+				margin-top: - $doublePadding * 3.3;
+			}
+		}
+		#second {
+
+			@include mq($from: medium) {
+				flex-basis: 50%;
+				order: 2;
+				@include box-sizing(border-box);
+				padding-right: $doublePadding;
+				padding-left: $padding;
+
+				.textarea {
+					width: 100%;
+				}
+			}
+		}
+		#third {
+			@include mq($from: medium) {
+				flex-basis: 50%;
+				order: 5;
+				@include box-sizing(border-box);
+				padding-left: $doublePadding;
+				padding-right: $padding;
+				margin-top: - $doublePadding * 2;
+			}
+		}
+		#fourth {
+			@include mq($from: medium) {
+				order: 4;
+				flex-basis: 50%;
+				@include box-sizing(border-box);
+				padding-right: $doublePadding;
+				padding-left: $padding;
+				
+			}
+		}
+
+		// .half {
+		// 	flex: 1;
+		// 	@include box-sizing(border-box);
+		// 	padding: 10px;
+		// 	width: 40%;
+
+		// 	&:first-child {
+		// 		@include mq($from: medium) {
+		// 			margin-right: 20%;
+		// 		}
+		// 	}
+
+		// 	@include mq($until: medium) {
+		// 		flex: 1 1 auto;
+		// 		width: 100%;
+		// 	}
+		// }
 		.screenholder {
 			padding: $padding;
 			@include border-radius(8px);
 			@include box-shadow(-5px 10px rgba(0,0,0,.3));
+			width: 100%;
+			@include box-sizing(border-box);
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+
+			@include mq($until: medium) {
+				padding: $halfPadding;
+			}
+
+			img {
+				width: 100%;
+			}
+			
 		}
 
 	}

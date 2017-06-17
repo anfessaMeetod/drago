@@ -1,53 +1,105 @@
 .hero {
 
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 
 	@include flexbox;
 	@include align-items(center);
 	@include justify-content(center);
 
 	.hero-inner {
-
 		position: relative;
-		width: 100%;
-		height: 500px;
-		
+		height: auto;
+
+		@include mq($from: medium) {
+			height: 500px;
+			width: auto;
+		}
 	}
 
 	#backplate {
 		position: absolute;
 		width: 450px;
 		height: 560px;
-		background-image: url('../images/pattern.png');
+		background-image: url('../images/pattern_hero.jpg');
+		background-size: cover;
 		@include border-radius(15px);
 		@include flexbox;
 		@include align-items(flex-end);
 		padding-left: $padding;
 		padding-bottom: $padding;
+
+		@include mq($until: medium) {
+			width: 100%;
+			display: none;
+		}
 	}
 	.block {
-		padding: $doublePadding;
-		@include border-radius(15px);
-		margin-top: $padding +  50px;
-		background-image: url('../images/map.png');
+		background-image: url('../images/hero_map.jpg');
 		background-size: cover;
-		color: #fff;
-		padding-left: $doublePadding *3;
-		width: 450px;
 		position: relative;
-		margin-left: 250px;
+		width: 100%;
+		margin-left: 0;
+		padding-left: $halfPadding;
+		margin-top: 0;
+
+		@include mq($from: medium) {
+			margin-left: 175px;
+			padding: $padding;
+			padding-left: $doublePadding *2;
+			margin-top: $padding + 20px;
+			width: auto;
+
+		}
+
+		@include mq($from: large) {
+			margin-left: 250px;
+			padding: $doublePadding;
+			padding-left: $doublePadding *3;
+		}
+
+
 
 		.floating-phone {
-			position: absolute;
-			left: -100px;
-			width: 250px;
-			top: 20px;
+			display: none;
+			left: 0;
+
+			@include mq($from: medium) {
+				position: absolute;
+				display: block;
+				left: -100px;
+				width: 200px;
+				top: 40px;
+			}
+			@include mq($from: large) {
+				width: 250px;
+			}
 		}
 		.badges {
 			max-width: 150px;
+
+			@include mq($until: medium) {
+				max-width: 130px;
+			}
 		}
 	}
-
-
 }
+
+.logo-small {
+
+		position: relative;
+		width: 100%;
+		@include flex;
+		@include justify-content(center);
+		@include align-items(center);
+		text-align: center;
+
+		img {
+			margin: 0 auto;
+			max-width: 75px;
+		}
+
+		@include mq($from: medium) {
+			display: none;
+		}
+	}
