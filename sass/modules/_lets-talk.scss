@@ -4,11 +4,23 @@
 
 	.block {
 		background-color: $green;
+		z-index: 20;
 	
 
 	@include mq($from: medium) {
 		//	@include box-sizing(border-box);
-			padding: 0 $padding;
+			//padding: 0 $padding;
+		}
+	}
+	.social-media {
+		@include flexbox;
+		width: 100%;
+		@include justify-content(flex-end);
+		margin-top: $halfPadding;
+
+		a {
+			margin-left: $halfPadding;
+			font-size: 30px;
 		}
 	}
 }

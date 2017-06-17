@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Drago - Almost like Dragon, the seed</title>
+  <title>Drago</title>
 
   <!-- Latest compiled and minified CSS -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://use.fontawesome.com/5df59d5298.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,8 +37,13 @@
                 <hr align="left">
                 <p>No memberships. No reservations. <br>
                   No commitments. Workout on your terms.</p>
-                  <img src="images/app_store_badge.png" class="badges">
-                  <img src="images/google-play-badge.png" class="badges">
+                  <a href="https://itunes.apple.com/us/app/drago-gyms-by-the-minute/id1172282958?ls=1&mt=8" target="_blank">
+                    <img src="images/app_store_badge.png" class="badges">
+                  </a>
+                  
+                  <a href="https://play.google.com/store/apps/details?id=com.drago.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
+                    <img src="images/google-play-badge.png" class="badges">
+                  </a>
                 </div>
               </div>
             </div>
@@ -138,7 +144,7 @@
         <p>Soon - but at this time you don’t have access to classes. But our partner gyms do offer a wide variety of classes, ask their staff when you arrive</p>
         <h4> HOW MUCH DOES 60 MINUTES COST? </h4>
         <p>Between $7-$12. Depending on which DRAGO gym you choose to go to.</p>
-         <h4>ARE THERE ANY RESTRICTIONS?  </h4>
+        <h4>ARE THERE ANY RESTRICTIONS?  </h4>
         <p>No! Come and go as you please.</p>
       </div>
 
@@ -182,6 +188,12 @@
    </div>
  </div>
 
+ <div class="social-media">
+  <a href="https://www.facebook.com/DRAGOGYMS/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://www.instagram.com/dragogyms/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  <a href="https://twitter.com/DRAGOGYMS" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+ </div>
+
 </section>
 
 </div>
@@ -189,9 +201,14 @@
 <footer class="footer">
  <img src="images/logo.png" alt="logo">
  <div class="stores">
-   <img src="images/app_store_badge.png" class="badges">
-   <img src="images/google-play-badge.png" class="badges">
- </div>
+   <a href="https://itunes.apple.com/us/app/drago-gyms-by-the-minute/id1172282958?ls=1&mt=8" target="_blank">
+    <img src="images/app_store_badge.png" class="badges">
+  </a>
+
+  <a href="https://play.google.com/store/apps/details?id=com.drago.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
+    <img src="images/google-play-badge.png" class="badges">
+  </a>
+</div>
 </footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -201,25 +218,34 @@
 <!--             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 -->          
 <script>
-  var velocity = 0.1;
+  var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
-  function update(){ 
-    var pos = $(window).scrollTop(); 
-    $('#map').each(function() { 
-      var $element = $(this);
+  console.log(width);
+
+  if (width > 1000) {
+
+    var velocity = 0.1;
+
+    function update(){ 
+      var pos = $(window).scrollTop(); 
+      $('#map').each(function() { 
+        var $element = $(this);
     // subtract some from the height b/c of the padding
     var height = $element.height();
     $(this).css('backgroundPosition', '0px ' + Math.round((height - pos) * velocity) +  'px'); 
   }); 
-  };
+    };
 
-  var dos = $(window).scrollTop(); 
-  var map = $('#map');
-  var he = map.height();
-  map.css('backgroundPosition', '0px ' + Math.round((he - dos) * velocity) +  'px'); 
-  map.css({"margin-top": '-' + Math.round((he - dos) * velocity) +  'px'});
+    var dos = $(window).scrollTop(); 
+    var map = $('#map');
+    var he = map.height();
+    map.css('backgroundPosition', '0px ' + Math.round((he - dos) * velocity) +  'px'); 
+    map.css({"margin-top": '-' + Math.round((he - dos) * velocity) +  'px'});
 
-  $(window).bind('scroll', update);
+    $(window).bind('scroll', update);
+  }
+
 </script>
 </body>
 </html>

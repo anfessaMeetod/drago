@@ -1,6 +1,7 @@
 .container {
 	@include box-sizing(border-box);
 	padding: $halfPadding;
+	z-index: 11;
 		// @include mq($from: large) {
 		// 	padding: $halfPadding;
 		// }

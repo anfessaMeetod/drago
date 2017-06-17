@@ -35,9 +35,12 @@
 				order: 3;
 				flex-basis: 50%;
 				@include box-sizing(border-box);
-				padding-left: $doublePadding;
+				padding-left: $padding;
 				padding-right: $padding;
 				margin-top: - $doublePadding * 3.3;
+			}
+			@include mq($from: large) {
+				padding-left: $doublePadding;
 			}
 		}
 		#second {
@@ -46,12 +49,15 @@
 				flex-basis: 50%;
 				order: 2;
 				@include box-sizing(border-box);
-				padding-right: $doublePadding;
+				padding-right: $padding;
 				padding-left: $padding;
 
 				.textarea {
 					width: 100%;
 				}
+			}
+			@include mq($from: large) {
+				padding-right: $doublePadding;
 			}
 		}
 		#third {
@@ -59,9 +65,12 @@
 				flex-basis: 50%;
 				order: 5;
 				@include box-sizing(border-box);
-				padding-left: $doublePadding;
+				padding-left: $padding;
 				padding-right: $padding;
 				margin-top: - $doublePadding * 2;
+			}
+			@include mq($from: large) {
+				padding-left: $doublePadding;
 			}
 		}
 		#fourth {
@@ -69,9 +78,12 @@
 				order: 4;
 				flex-basis: 50%;
 				@include box-sizing(border-box);
-				padding-right: $doublePadding;
+				padding-right: $padding;
 				padding-left: $padding;
 				
+			}
+			@include mq($from: large) {
+				padding-right: $doublePadding;
 			}
 		}
 

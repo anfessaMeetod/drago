@@ -8,17 +8,19 @@
 
 	.block {
 
-		padding: $padding $doublePadding;
+		//padding: $padding $doublePadding;
 
-		@include mq($until: medium) {
-			padding: $padding $halfPadding;
-		}
+		// @include mq($until: medium) {
+		// 	padding: $padding $halfPadding;
+		// }
 
 		.half {
 
 			img {
 				max-width: 350px;
 				width: 100%;
+				margin: 0 auto;
+				display: block;
 
 				@include mq($until: medium) {
 					margin-top: $halfPadding;

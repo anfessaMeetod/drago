@@ -1,7 +1,7 @@
 .block {
 		@include flexbox;
 		@include align-items(center);
-		padding: $doublePadding;
+		padding: $padding $halfPadding;
 		@include border-radius(15px);
 		color: #fff;
 		@include box-shadow(-5px 10px rgba(0,0,0,.3));
@@ -9,17 +9,24 @@
 		@include flex-wrap(wrap);
 		@include box-sizing(border-box);
 
-		@include mq($until: medium) {
-			padding: $padding $halfPadding;
-		}
-		
-		.half {
-			flex: 1;
+		@include mq($from: medium) {
 			padding: $padding;
+		}
+		@include mq($from: 970px) {
+			padding: $padding $doublePadding;
+		}
 
-			@include mq($until: medium) {
-				padding: 0;
-				flex: 1 1 auto;
+		.half {
+
+			padding: 0;
+			flex: 1 1 auto;
+
+			@include mq($from: medium) {
+				flex: 1;
+				padding: $halfPadding;
+			}
+			@include mq($from: large) {
+				padding: $padding;
 			}
 		}
 }
