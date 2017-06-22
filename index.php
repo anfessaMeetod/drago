@@ -61,7 +61,7 @@
               </p>
             </div>
             <div class="half">
-              <img src="images/screens.png">
+              <img src="images/mockup_devices.png">
             </div>
           </div>
 
