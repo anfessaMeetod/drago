@@ -35,7 +35,8 @@
 		}
 	}
 	.block {
-		background-image: url('../images/hero_map.jpg');
+		//background-image: url('../images/hero_map.jpg');
+		background-color: $darkGreen;
 		background-size: cover;
 		position: relative;
 		width: 100%;

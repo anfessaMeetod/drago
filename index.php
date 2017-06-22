@@ -4,14 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Drago</title>
-
-  <!-- Latest compiled and minified CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <script src="https://use.fontawesome.com/5df59d5298.js"></script>
-
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -98,8 +93,6 @@
            <div class="screenholder bg-green">
              <img src="images/drago_2.png">
            </div>
-
-
            <div class="textarea">
             <h2>02 directions</h2>
             <p>Follow the interactive map and make your way to the gym.</p>
@@ -107,7 +100,6 @@
         </div>
 
         <div id="third">
-
           <div class="screenholder bg-grey">
             <img src="images/drago_3.png">
           </div>
@@ -167,24 +159,30 @@
        <p>Our vision is simple: “Satisfy all of your wellness needs by delivering wellness experiences through flexibility, convenience and choice.” We’re far from it today, but one step closer than we were yesterday. Our most valuable asset is our users, we truly want you to be part of our journey. Write to us and let us know how we’re doing. We’ve also made it easy for you to actively participate in our evolution by being able to “request service” at NON-DRAGO” locations shown the app. </p>
      </div>
      <div class="half">
+     <div class="form">
       <h3>send us a message</h3>
-      <form action="" method="POST">
+      <form action="index.php" method="POST" id="contactForm">
        <div class="input">
          <label>your name</label>
-         <input type="text" name="">
+         <input type="text" name="name" id="name">
        </div>
        <div class="input">
          <label>your email</label>
-         <input type="text" name="">
+         <input type="text" name="email" id="email">
        </div>
        <div class="input">
          <label>your message</label>
-         <textarea rows="4" name="msg"></textarea>
+         <textarea rows="4" name="msg" id="msg"></textarea>
        </div>
        <div class="input">
-         <button type="submit" class="btn btn-right">send</button>
+         <button id="formSubmit" type="submit" class="btn btn-right">send</button>
        </div>
      </form>
+     </div>
+     <div class="sent">
+       <h3>Thanks for you message!</h3>
+       <p>We'll get back to you as soon as possible!</p>
+     </div>
    </div>
  </div>
 
@@ -219,12 +217,8 @@
 -->          
 <script>
   var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
-  console.log(width);
 
   if (width > 1000) {
-
     var velocity = 0.1;
 
     function update(){ 
@@ -232,9 +226,9 @@
       $('#map').each(function() { 
         var $element = $(this);
     // subtract some from the height b/c of the padding
-    var height = $element.height();
-    $(this).css('backgroundPosition', '0px ' + Math.round((height - pos) * velocity) +  'px'); 
-  }); 
+        var height = $element.height();
+        $(this).css('backgroundPosition', '0px ' + Math.round((height - pos) * velocity) +  'px'); 
+      }); 
     };
 
     var dos = $(window).scrollTop(); 
@@ -245,6 +239,29 @@
 
     $(window).bind('scroll', update);
   }
+
+  // ---------
+  // Did someone say submit?
+  // ------
+
+  $("#formSubmit").click(function(e) {
+    e.preventDefault();
+
+    var name  = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var msg   = document.getElementById("msg").value;
+
+    $.ajax({
+      method: "POST",
+      url: "mail.php",
+      data: { name : name, email : email, msg : msg },
+      success: function(data, status) {
+        $(".form").hide();
+        $(".sent").show();
+      }
+    });
+  
+});
 
 </script>
 </body>

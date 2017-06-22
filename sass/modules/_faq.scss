@@ -3,11 +3,11 @@
 	.heading {
 		width: 100%;
 		padding-left: 0;
-		padding-top: $padding;
-		margin-bottom: -$padding;
+		margin-bottom: 0;
 
 		@include mq($from: medium) {
 			padding-left: $halfPadding;
+			padding-top: $padding;
 		}
 		@include mq($from: large) {
 			padding-left: $padding;

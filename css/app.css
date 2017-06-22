@@ -250,7 +250,7 @@ a {
         display: none; } }
   /* line 37, /Users/anfessa/http/drago/sass/modules/_hero.scss */
   .hero .block {
-    background-image: url("../images/hero_map.jpg");
+    background-color: #21642F;
     background-size: cover;
     position: relative;
     width: 100%;
@@ -271,12 +271,12 @@ a {
         margin-left: 250px;
         padding: 80px;
         padding-left: 240px; } }
-    /* line 63, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+    /* line 64, /Users/anfessa/http/drago/sass/modules/_hero.scss */
     .hero .block .floating-phone {
       display: none;
       left: 0; }
       @media (min-width: 46.25em) {
-        /* line 63, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+        /* line 64, /Users/anfessa/http/drago/sass/modules/_hero.scss */
         .hero .block .floating-phone {
           position: absolute;
           display: block;
@@ -284,18 +284,18 @@ a {
           width: 200px;
           top: 40px; } }
       @media (min-width: 61.9375em) {
-        /* line 63, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+        /* line 64, /Users/anfessa/http/drago/sass/modules/_hero.scss */
         .hero .block .floating-phone {
           width: 250px; } }
-    /* line 78, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+    /* line 79, /Users/anfessa/http/drago/sass/modules/_hero.scss */
     .hero .block .badges {
       max-width: 150px; }
       @media (max-width: 46.24em) {
-        /* line 78, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+        /* line 79, /Users/anfessa/http/drago/sass/modules/_hero.scss */
         .hero .block .badges {
           max-width: 130px; } }
 
-/* line 88, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+/* line 89, /Users/anfessa/http/drago/sass/modules/_hero.scss */
 .logo-small {
   position: relative;
   width: 100%;
@@ -316,12 +316,12 @@ a {
   -moz-align-items: center;
   align-items: center;
   text-align: center; }
-  /* line 97, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+  /* line 98, /Users/anfessa/http/drago/sass/modules/_hero.scss */
   .logo-small img {
     margin: 0 auto;
     max-width: 75px; }
   @media (min-width: 46.25em) {
-    /* line 88, /Users/anfessa/http/drago/sass/modules/_hero.scss */
+    /* line 89, /Users/anfessa/http/drago/sass/modules/_hero.scss */
     .logo-small {
       display: none; } }
 
@@ -573,17 +573,20 @@ a {
     .lets-talk .social-media a {
       margin-left: 20px;
       font-size: 30px; }
+  /* line 26, /Users/anfessa/http/drago/sass/modules/_lets-talk.scss */
+  .lets-talk .sent {
+    display: none; }
 
 /* line 3, /Users/anfessa/http/drago/sass/modules/_faq.scss */
 .faq .heading {
   width: 100%;
   padding-left: 0;
-  padding-top: 40px;
-  margin-bottom: -40px; }
+  margin-bottom: 0; }
   @media (min-width: 46.25em) {
     /* line 3, /Users/anfessa/http/drago/sass/modules/_faq.scss */
     .faq .heading {
-      padding-left: 20px; } }
+      padding-left: 20px;
+      padding-top: 40px; } }
   @media (min-width: 61.9375em) {
     /* line 3, /Users/anfessa/http/drago/sass/modules/_faq.scss */
     .faq .heading {
@@ -626,7 +629,8 @@ a {
   background-image: url("../images/170617_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -2; }
+  background-positio: top;
+  z-index: 1; }
 
 /* line 1, /Users/anfessa/http/drago/sass/modules/_layout.scss */
 .container {
