@@ -7,6 +7,14 @@
   <title>Drago</title>
   <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <script src="https://use.fontawesome.com/5df59d5298.js"></script>
+
+  <link rel="shortcut icon" type="image/png" href="images/icons/favicon.png"/>
+  <link href="images/icons/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="images/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+  <link href="images/icons/apple-touch-icon-167x167.png" rel="apple-touch-icon" sizes="167x167" />
+  <link href="images/icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+  <link href="images/icons/icon-hires.png" rel="icon" sizes="192x192" />
+  <link href="images/icons/icon-normal.png" rel="icon" sizes="128x128" />
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
