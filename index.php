@@ -177,7 +177,7 @@
      <div class="half">
        <h1 class="big to-line">Let's talk.</h1>
        <hr align="left">
-       <p>Our vision is simple:<br><br> “Deliver wellness experiences through flexibility, convenience and choice.” <br><br> We’re far from it today, but one step closer than we were yesterday. Our most valuable asset is our users, we truly want you to be part of our journey. Write to us, let us know how we’re doing and what we can do better. Suggestions and feedback is extremely helpful as we continue to evolve. <br> Thank you for your support!</p>
+       <p>Our vision is simple:<br><br> “Deliver wellness experiences through flexibility, convenience and choice.” <br><br> We’re far from it today, but one step closer than we were yesterday. Our most valuable asset is our users, we truly want you to be part of our journey. Write to us, let us know how we’re doing and what we can do better. Suggestions and feedback is extremely helpful as we continue to evolve. <br><br> Thank you for your support!</p>
      </div>
      <div class="half">
      <div class="form">
