@@ -132,7 +132,7 @@
         <div id="fourth">
           <div class="textarea">
             <h2>04 scan-out</h2>
-            <p>When you feel ready,  SCAN-OUT using your phone at the DRAGO checkout. Payment for the time spent is processed automatically</p>
+            <p>When you feel ready,  SCAN-OUT using your phone at the DRAGO checkout. Payment for time spent is processed automatically</p>
           </div>
           <div class="screenholder bg-green">
             <img src="images/drago_4.png">
