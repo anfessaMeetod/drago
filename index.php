@@ -28,6 +28,11 @@
       <div class="container">
         <section class="hero">
           <div class="hero-inner">
+            
+             <div class="logo-small">
+           <img src="images/logo.png" alt="logo">
+         </div>
+
             <div id="backplate" class=" bg-black">
               <div>
                 <img src="images/logo.png" alt="logo">
@@ -58,9 +63,7 @@
 
 
 
-          <div class="logo-small">
-           <img src="images/logo.png" alt="logo">
-         </div>
+         
 
          <div class="arrow bounce">
             <a class="fa fa-arrow-down fa-2x" href="#"></a>
