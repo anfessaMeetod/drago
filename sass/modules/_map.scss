@@ -5,6 +5,14 @@
 	background-image: url('../images/170617_bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-positio: top;
+	background-position: top;
 	z-index: 1;
+	top: 0;
+	left: 0;
+
+	@include mq($until: medium) {
+		background-size: cover;
+		height: 900px;
+		width: 400px;
+	}
 }
