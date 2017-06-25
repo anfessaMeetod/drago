@@ -82,6 +82,10 @@ h1 {
   font-size: 46px;
   text-transform: uppercase;
   margin: 0; }
+  @media (max-width: 46.24em) {
+    /* line 48, /Users/anfessa/http/drago/sass/core/_typography.scss */
+    h1 {
+      font-size: 36px; } }
   /* line 57, /Users/anfessa/http/drago/sass/core/_typography.scss */
   h1.big {
     font-size: 96px;

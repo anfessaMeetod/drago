@@ -65,9 +65,9 @@
 
          
 
-         <div class="arrow bounce">
+        <!--  <div class="arrow bounce">
             <a class="fa fa-arrow-down fa-2x" href="#"></a>
-            </div>
+            </div> -->
 
          <section class="about">
 
