@@ -92,7 +92,7 @@
               <h1>How to drago</h1>
               <hr align="left" style="margin-bottom: 20px;">
               <p>DRAGO gives you access to local gyms, allowing you to workout on your own terms
-                and simply pay for the time spent. No memberships. No reservations.</p>
+                and simply pay for time spent. No memberships. No reservations.</p>
               </div>
             </div>
 
