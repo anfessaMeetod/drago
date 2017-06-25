@@ -207,62 +207,27 @@
     <img src="images/google-play-badge.png" class="badges">
   </a>
 </div>
+<a id="termsBtn" class="pointer">Terms & Conditions</a>
+<a id="privacyBtn" class="pointer">Privacy</a>
+
 </footer>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!-- Latest compiled and minified JavaScript -->
-<!--             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
--->          
-<script>
-  var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+<div id="privacyModal" class="modal">
+  <div class="modal-content">
+    <span class="close closePrivacy">&times;</span>
+    <?php include_once('privacy.php'); ?>
+  </div>
+</div> <!-- End of modal -->
 
-  if (width > 1000) {
-    var velocity = 0.1;
+<div id="termsModal" class="modal">
+  <div class="modal-content">
+    <span class="close closeTerms">&times;</span>
+    <?php include_once('terms.php'); ?>
+  </div>
+</div> <!-- End of modal -->
 
-    function update(){ 
-      var pos = $(window).scrollTop(); 
-      $('#map').each(function() { 
-        var $element = $(this);
-    // subtract some from the height b/c of the padding
-        var height = $element.height();
-        $(this).css('backgroundPosition', '0px ' + Math.round((height - pos) * velocity) +  'px'); 
-      }); 
-    };
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>        
+<script src="js/app.js"></script>
 
-    var dos = $(window).scrollTop(); 
-    var map = $('#map');
-    var he = map.height();
-    map.css('backgroundPosition', '0px ' + Math.round((he - dos) * velocity) +  'px'); 
-    map.css({"margin-top": '-' + Math.round((he - dos) * velocity) +  'px'});
-
-    $(window).bind('scroll', update);
-  }
-
-  // ---------
-  // Did someone say submit?
-  // ------
-
-  $("#formSubmit").click(function(e) {
-    e.preventDefault();
-
-    var name  = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var msg   = document.getElementById("msg").value;
-
-    $.ajax({
-      method: "POST",
-      url: "mail.php",
-      data: { name : name, email : email, msg : msg },
-      success: function(data, status) {
-        $(".form").hide();
-        $(".sent").show();
-      }
-    });
-  
-});
-
-</script>
 </body>
 </html>

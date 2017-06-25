@@ -133,7 +133,7 @@ gulp.task('upload', function() {
 	var conn = ftp.create( {
 			host:     'ftp.anfessa.com',
 			user:     '134769_drago',
-			password: 'testing',
+			password: 'testing1',
 			parallel: 10,
 			log: gutil.log
 	} );

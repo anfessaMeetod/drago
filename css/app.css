@@ -617,7 +617,10 @@ a {
   .footer .stores {
     margin-top: 40px;
     margin-bottom: 40px; }
-    /* line 16, /Users/anfessa/http/drago/sass/modules/_footer.scss */
+    /* line 17, /Users/anfessa/http/drago/sass/modules/_footer.scss */
+    .footer .stores a {
+      text-decoration: none; }
+    /* line 20, /Users/anfessa/http/drago/sass/modules/_footer.scss */
     .footer .stores .badges {
       max-width: 150px; }
 
@@ -631,6 +634,45 @@ a {
   background-size: cover;
   background-positio: top;
   z-index: 1; }
+
+/* line 1, /Users/anfessa/http/drago/sass/modules/_modal.scss */
+.pointer {
+  cursor: pointer; }
+
+/* line 4, /Users/anfessa/http/drago/sass/modules/_modal.scss */
+#privacyBtn {
+  margin-left: 20px; }
+
+/* line 7, /Users/anfessa/http/drago/sass/modules/_modal.scss */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+  /* line 19, /Users/anfessa/http/drago/sass/modules/_modal.scss */
+  .modal .modal-content {
+    background-color: #fefefe;
+    margin: 40px auto 0 auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 80%; }
+    /* line 26, /Users/anfessa/http/drago/sass/modules/_modal.scss */
+    .modal .modal-content .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold; }
+      /* line 32, /Users/anfessa/http/drago/sass/modules/_modal.scss */
+      .modal .modal-content .close:hover, .modal .modal-content .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer; }
 
 /* line 1, /Users/anfessa/http/drago/sass/modules/_layout.scss */
 .container {

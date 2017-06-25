@@ -13,6 +13,10 @@
 	.stores {
 		margin-top: $padding;
 		margin-bottom: $padding;
+
+		a {
+			text-decoration: none;
+		}
 		.badges {
 			max-width: 150px;
 		}
