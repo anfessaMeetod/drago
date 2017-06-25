@@ -191,7 +191,7 @@ a {
 /* line 1, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
 .hero {
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -216,7 +216,10 @@ a {
       .hero .hero-inner {
         height: 500px;
         width: auto; } }
-  /* line 20, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    /* line 20, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    .hero .hero-inner a {
+      text-decoration: none; }
+  /* line 27, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
   .hero #backplate {
     position: absolute;
     width: 450px;
@@ -244,11 +247,11 @@ a {
     padding-left: 40px;
     padding-bottom: 40px; }
     @media (max-width: 46.24em) {
-      /* line 20, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+      /* line 27, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
       .hero #backplate {
         width: 100%;
         display: none; } }
-  /* line 37, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+  /* line 44, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
   .hero .block {
     background-color: #21642F;
     background-size: cover;
@@ -258,7 +261,7 @@ a {
     padding-left: 20px;
     margin-top: 0; }
     @media (min-width: 46.25em) {
-      /* line 37, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+      /* line 44, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
       .hero .block {
         margin-left: 175px;
         padding: 40px;
@@ -266,17 +269,17 @@ a {
         margin-top: 60px;
         width: auto; } }
     @media (min-width: 61.9375em) {
-      /* line 37, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+      /* line 44, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
       .hero .block {
         margin-left: 250px;
         padding: 80px;
         padding-left: 240px; } }
-    /* line 64, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    /* line 71, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
     .hero .block .floating-phone {
       display: none;
       left: 0; }
       @media (min-width: 46.25em) {
-        /* line 64, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+        /* line 71, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
         .hero .block .floating-phone {
           position: absolute;
           display: block;
@@ -284,46 +287,63 @@ a {
           width: 200px;
           top: 40px; } }
       @media (min-width: 61.9375em) {
-        /* line 64, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+        /* line 71, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
         .hero .block .floating-phone {
           width: 250px; } }
-    /* line 79, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    /* line 86, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
     .hero .block .badges {
       max-width: 150px; }
-      @media (max-width: 46.24em) {
-        /* line 79, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+      @media (max-width: 21.865em) {
+        /* line 86, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
         .hero .block .badges {
-          max-width: 130px; } }
+          max-width: 115px; } }
+      @media (min-width: 21.875em) and (max-width: 46.24em) {
+        /* line 86, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+        .hero .block .badges {
+          max-width: 144px; } }
 
-/* line 89, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+/* line 101, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
 .logo-small {
-  position: relative;
   width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -moz-box-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
   text-align: center; }
-  /* line 98, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+  @media (min-width: 20em) and (max-width: 21.865em) {
+    /* line 101, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    .logo-small {
+      margin-top: 30px; } }
+  /* line 111, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
   .logo-small img {
     margin: 0 auto;
     max-width: 75px; }
   @media (min-width: 46.25em) {
-    /* line 89, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    /* line 101, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
     .logo-small {
       display: none; } }
+
+/* line 121, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+.arrow {
+  text-align: left;
+  margin-top: -20px; }
+  @media (min-width: 46.25em) {
+    /* line 121, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    .arrow {
+      display: none; } }
+  /* line 129, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+  .arrow a {
+    text-decoration: none; }
+
+/* line 133, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
 
 /* line 1, /Users/Andreas/www/sites/drago/sass/modules/_about.scss */
 .about {
@@ -334,8 +354,7 @@ a {
       margin-top: 40px; } }
   /* line 19, /Users/Andreas/www/sites/drago/sass/modules/_about.scss */
   .about .block .half img {
-    max-width: 350px;
-    width: 100%;
+    width: 110%;
     margin: 0 auto;
     display: block; }
     @media (max-width: 46.24em) {
@@ -345,7 +364,7 @@ a {
 
 /* line 3, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
 .how .textarea {
-  padding-bottom: 80px; }
+  padding-bottom: 20px; }
 
 /* line 6, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
 .how p {
@@ -391,7 +410,7 @@ a {
       box-sizing: border-box;
       padding-left: 40px;
       padding-right: 40px;
-      margin-top: -264px; } }
+      margin-top: -240px; } }
   @media (min-width: 61.9375em) {
     /* line 32, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
     .how .flow #first {
@@ -446,12 +465,18 @@ a {
       -o-box-sizing: border-box;
       box-sizing: border-box;
       padding-right: 40px;
-      padding-left: 40px; } }
+      padding-left: 40px;
+      padding-bottom: 80px;
+      margin-top: 80px; } }
   @media (min-width: 61.9375em) {
     /* line 76, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
     .how .flow #fourth {
       padding-right: 80px; } }
-  /* line 107, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
+  @media (max-width: 46.24em) {
+    /* line 76, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
+    .how .flow #fourth {
+      padding-bottom: 80px; } }
+  /* line 113, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
   .how .flow .screenholder {
     padding: 40px;
     -webkit-border-radius: 8px;
@@ -479,10 +504,10 @@ a {
     position: relative;
     text-align: center; }
     @media (max-width: 46.24em) {
-      /* line 107, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
+      /* line 113, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
       .how .flow .screenholder {
         padding: 20px; } }
-    /* line 121, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
+    /* line 127, /Users/Andreas/www/sites/drago/sass/modules/_howto.scss */
     .how .flow .screenholder img {
       width: 100%; }
 
@@ -546,6 +571,14 @@ a {
       /* line 19, /Users/Andreas/www/sites/drago/sass/modules/_blocks.scss */
       .block .half {
         padding: 40px; } }
+  @media (min-width: 46.25em) {
+    /* line 34, /Users/Andreas/www/sites/drago/sass/modules/_blocks.scss */
+    .block .half-pic {
+      flex: 1;
+      padding: 0; } }
+  /* line 40, /Users/Andreas/www/sites/drago/sass/modules/_blocks.scss */
+  .block .half-pic img {
+    width: 110%; }
 
 /* line 1, /Users/Andreas/www/sites/drago/sass/modules/_lets-talk.scss */
 .lets-talk {
@@ -614,12 +647,12 @@ a {
   z-index: 10;
   padding-top: 250px; }
   /* line 13, /Users/Andreas/www/sites/drago/sass/modules/_footer.scss */
+  .footer a {
+    text-decoration: none; }
+  /* line 17, /Users/Andreas/www/sites/drago/sass/modules/_footer.scss */
   .footer .stores {
     margin-top: 40px;
     margin-bottom: 40px; }
-    /* line 17, /Users/Andreas/www/sites/drago/sass/modules/_footer.scss */
-    .footer .stores a {
-      text-decoration: none; }
     /* line 20, /Users/Andreas/www/sites/drago/sass/modules/_footer.scss */
     .footer .stores .badges {
       max-width: 150px; }

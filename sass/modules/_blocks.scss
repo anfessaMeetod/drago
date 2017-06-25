@@ -29,4 +29,16 @@
 				padding: $padding;
 			}
 		}
+
+
+		.half-pic{
+			@include mq($from: medium) {
+				flex: 1;
+				padding: 0;
+			}
+
+			img{
+				width: 110%;
+			}
+		}
 }

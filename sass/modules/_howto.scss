@@ -1,7 +1,7 @@
 .how {
 
 	.textarea {
-		padding-bottom: $doublePadding;
+		padding-bottom: $padding /2;
 	}
 	p {
 		margin-top: 5px;
@@ -37,7 +37,7 @@
 				@include box-sizing(border-box);
 				padding-left: $padding;
 				padding-right: $padding;
-				margin-top: - $doublePadding * 3.3;
+				margin-top: - $doublePadding * 3;
 			}
 			@include mq($from: large) {
 				padding-left: $doublePadding;
@@ -80,10 +80,16 @@
 				@include box-sizing(border-box);
 				padding-right: $padding;
 				padding-left: $padding;
-				
+				padding-bottom: $doublePadding;
+				margin-top: $doublePadding;
+					
 			}
 			@include mq($from: large) {
 				padding-right: $doublePadding;
+			}
+
+			@include mq($until: medium) {
+				padding-bottom: $doublePadding;
 			}
 		}
 

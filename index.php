@@ -5,8 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Drago</title>
-  <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script src="https://use.fontawesome.com/5df59d5298.js"></script>
 
   <link rel="shortcut icon" type="image/png" href="images/icons/favicon.png"/>
   <link href="images/icons/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -15,6 +13,9 @@
   <link href="images/icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
   <link href="images/icons/icon-hires.png" rel="icon" sizes="192x192" />
   <link href="images/icons/icon-normal.png" rel="icon" sizes="128x128" />
+
+  <link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://use.fontawesome.com/5df59d5298.js"></script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,11 +36,11 @@
             <div class="block bg-green">
               <div>
                <img src="images/iphone_start.png" class="floating-phone">
-               <h1 class="to-line">ACCESS TO GYMS <br class="hidden-xs">
+               <h1 class="to-line">ACCESS GYMS <br class="hidden-xs">
                 WITH THE TAP <br class="hidden-xs"> OF A FINGER</h1>
                 <hr align="left">
-                <p>No memberships. No reservations. <br>
-                  No commitments. Workout on your terms.</p>
+                <p>No memberships.<br> No reservations. <br>
+                  Workout and pay for time spent.</p>
                   <a href="https://itunes.apple.com/us/app/drago-gyms-by-the-minute/id1172282958?ls=1&mt=8" target="_blank">
                     <img src="images/app_store_badge.png" class="badges">
                   </a>
@@ -51,24 +52,32 @@
               </div>
             </div>
 
+            
+
           </section>
+
+
 
           <div class="logo-small">
            <img src="images/logo.png" alt="logo">
          </div>
+
+         <div class="arrow bounce">
+            <a class="fa fa-arrow-down fa-2x" href="#"></a>
+            </div>
 
          <section class="about">
 
           <div class="block bg-green">
 
             <div class="half">
-              <h1 class="to-line">DISCOVER. SCAN-IN. WORKOUT. SCAN-OUT.
+              <h1 class="to-line">FIND A GYM. SCAN-IN. WORKOUT. SCAN-OUT.
               </h1>
               <hr align="left">
-              <p>DRAGO gives you complete control of your fitness experience. Choose a gym that fits your needs and arrive at your own convenience. No schedules or times to worry about except for your own. Workout and go on with your day feeling accomplished. 
+              <p>DRAGO gives you complete control of your fitness experience through: flexibility, convenience and choice. 
               </p>
             </div>
-            <div class="half">
+            <div class="half half-pic">
               <img src="images/mockup_devices.png">
             </div>
           </div>
@@ -88,44 +97,48 @@
             </div>
 
             <div id="first">
-             <div class="screenholder bg-grey">
-               <img src="images/drago_1.png">
-             </div>
-             <div class="textarea">
+            <div class="textarea">
               <h2>01 discover</h2>
               <p>Choose a DRAGO gym that fits your needs, whether it’s price or convenient location.</p>
             </div>
+             <div class="screenholder bg-grey">
+               <img src="images/drago_1-1.png">
+             </div>
+             
           </div>
 
           <div id="second">
-           <div class="screenholder bg-green">
-             <img src="images/drago_2.png">
-           </div>
-           <div class="textarea">
+          <div class="textarea">
             <h2>02 directions</h2>
             <p>Follow the interactive map and make your way to the gym.</p>
           </div>
+           <div class="screenholder bg-green">
+             <img src="images/drago_2-1.png">
+           </div>
+           
         </div>
 
         <div id="third">
+         <div class="textarea">
+            <h2>03 workout</h2>
+            <p>SCAN-IN using your phone at the DRAGO checkpoint and start your workout.</p>
+          </div>
           <div class="screenholder bg-grey">
             <img src="images/drago_3.png">
           </div>
-          <div class="textarea">
-            <h2>03 workout</h2>
-            <p>SCAN-IN using your phone camera at the DRAGO checkpoint and start your workout.</p>
-          </div>
+         
         </div>
 
         <div id="fourth">
-          <div class="screenholder bg-green">
-            <img src="images/drago_4.png">
-          </div>
-
           <div class="textarea">
             <h2>04 scan-out</h2>
             <p>When you feel ready,  SCAN-OUT using your phone at the DRAGO checkout. Payment for the time spent is processed automatically</p>
           </div>
+          <div class="screenholder bg-green">
+            <img src="images/drago_4.png">
+          </div>
+
+        
         </div>
       </div>
 
@@ -164,7 +177,7 @@
      <div class="half">
        <h1 class="big to-line">Let's talk.</h1>
        <hr align="left">
-       <p>Our vision is simple: “Satisfy all of your wellness needs by delivering wellness experiences through flexibility, convenience and choice.” We’re far from it today, but one step closer than we were yesterday. Our most valuable asset is our users, we truly want you to be part of our journey. Write to us and let us know how we’re doing. We’ve also made it easy for you to actively participate in our evolution by being able to “request service” at NON-DRAGO” locations shown the app. </p>
+       <p>Our vision is simple:<br><br> “Deliver wellness experiences through flexibility, convenience and choice.” <br><br> We’re far from it today, but one step closer than we were yesterday. Our most valuable asset is our users, we truly want you to be part of our journey. Write to us, let us know how we’re doing and what we can do better. Suggestions and feedback is extremely helpful as we continue to evolve. <br> Thank you for your support!</p>
      </div>
      <div class="half">
      <div class="form">
@@ -215,27 +228,65 @@
     <img src="images/google-play-badge.png" class="badges">
   </a>
 </div>
-<a id="termsBtn" class="pointer">Terms & Conditions</a>
-<a id="privacyBtn" class="pointer">Privacy</a>
 
+<a href="#">Privacy</a>
+<a href="#">Terms & conditions</a>
 </footer>
 
-<div id="privacyModal" class="modal">
-  <div class="modal-content">
-    <span class="close closePrivacy">&times;</span>
-    <?php include_once('privacy.php'); ?>
-  </div>
-</div> <!-- End of modal -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled and minified JavaScript -->
+<!--             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+-->          
+<script>
+  var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-<div id="termsModal" class="modal">
-  <div class="modal-content">
-    <span class="close closeTerms">&times;</span>
-    <?php include_once('terms.php'); ?>
-  </div>
-</div> <!-- End of modal -->
+  if (width > 1000) {
+    var velocity = 0.1;
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>        
-<script src="js/app.js"></script>
+    function update(){ 
+      var pos = $(window).scrollTop(); 
+      $('#map').each(function() { 
+        var $element = $(this);
+    // subtract some from the height b/c of the padding
+        var height = $element.height();
+        $(this).css('backgroundPosition', '0px ' + Math.round((height - pos) * velocity) +  'px'); 
+      }); 
+    };
 
+    var dos = $(window).scrollTop(); 
+    var map = $('#map');
+    var he = map.height();
+    map.css('backgroundPosition', '0px ' + Math.round((he - dos) * velocity) +  'px'); 
+    map.css({"margin-top": '-' + Math.round((he - dos) * velocity) +  'px'});
+
+    $(window).bind('scroll', update);
+  }
+
+  // ---------
+  // Did someone say submit?
+  // ------
+
+  $("#formSubmit").click(function(e) {
+    e.preventDefault();
+
+    var name  = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var msg   = document.getElementById("msg").value;
+
+    $.ajax({
+      method: "POST",
+      url: "mail.php",
+      data: { name : name, email : email, msg : msg },
+      success: function(data, status) {
+        $(".form").hide();
+        $(".sent").show();
+      }
+    });
+  
+});
+
+</script>
 </body>
 </html>

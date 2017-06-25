@@ -6,7 +6,7 @@
   $msg =    $_POST['msg'];
 
   // Set the paramters
-  $to = "anton@badudden.se";
+  $to = "hello@drago.nyc";
   $subject = "Let's talk!";
   $txt = $msg . "\r\n" . "\r\n";
   $txt .= 'Best Regards ' . $name;

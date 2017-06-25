@@ -10,13 +10,13 @@
 	z-index: 10;
 	padding-top: 250px;
 
+	a{
+		text-decoration: none;
+	}
+
 	.stores {
 		margin-top: $padding;
 		margin-bottom: $padding;
-
-		a {
-			text-decoration: none;
-		}
 		.badges {
 			max-width: 150px;
 		}
