@@ -2,10 +2,16 @@
 
 	width: 100%;
 	height: 90vh;
+	padding-top: $halfPadding;
 
 	@include flexbox;
-	@include align-items(center);
+	@include align-items(flex-start);
 	@include justify-content(center);
+
+	@include mq($from: medium) {
+		@include align-items(center);
+		padding-top: 0;
+	}
 
 	.hero-inner {
 		position: relative;
@@ -103,10 +109,11 @@
 		
 		width: 100%;
 		text-align: center;
+		padding-bottom: $halfPadding;
+
 		@include mq($from: tiny, $until: semi-tiny) {
-				margin-top: 15px;
-				
-			}
+			margin-top: 15px;
+		}
 	
 
 		img {
