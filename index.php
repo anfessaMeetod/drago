@@ -101,7 +101,7 @@
 
             <div id="first">
             <div class="textarea">
-              <h2>01 discover</h2>
+              <h2>01 find a gym</h2>
               <p>Choose a DRAGO gym that fits your needs, whether it’s price or convenient location.</p>
             </div>
              <div class="screenholder bg-grey">
