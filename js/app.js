@@ -71,9 +71,10 @@ closePrivacy.onclick = function() {
     privacyModal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         privacyModal.style.display = "none";
-//     }
-// }
+//When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == termsModal || event.target == privacyModal) {
+        termsModal.style.display = "none";
+        privacyModal.style.display = "none";
+    }
+}
