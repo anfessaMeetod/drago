@@ -29,9 +29,9 @@
         <section class="hero">
           <div class="hero-inner">
             
-             <div class="logo-small">
-           <img src="images/logo.png" alt="logo">
-         </div>
+              <div class="logo-small">
+              <img src="images/logo.png" alt="logo">
+              </div>
 
             <div id="backplate" class=" bg-black">
               <div>
@@ -55,12 +55,18 @@
                   </a>
                 </div>
               </div>
+                <div class="down-indicator">
+                  <a href="#about"><img src="images/icon-down-loop.gif" alt=""></a>
+                </div>
             </div>
+
+            
 
             
 
           </section>
 
+        
 
 
          
@@ -69,7 +75,7 @@
             <a class="fa fa-arrow-down fa-2x" href="#"></a>
             </div> -->
 
-         <section class="about">
+         <section id="about" class="about">
 
           <div class="block bg-green">
 
@@ -253,6 +259,25 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>        
 <script src="js/app.js"></script>
+<!-- SMOOTH SCROLL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
 
 </body>
 </html>
