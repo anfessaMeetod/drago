@@ -200,7 +200,6 @@ a {
 .hero {
   width: 100%;
   height: 90vh;
-  padding-top: 20px;
   padding-bottom: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -307,18 +306,22 @@ a {
         padding-left: 160px;
         margin-top: 60px;
         width: auto; } }
+    @media (min-width: 20em) and (max-width: 21.865em) {
+      /* line 77, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+      .hero .block {
+        padding: 25px 20px; } }
     @media (min-width: 61.9375em) {
       /* line 77, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
       .hero .block {
         margin-left: 250px;
         padding: 80px;
         padding-left: 240px; } }
-    /* line 104, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    /* line 109, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
     .hero .block .floating-phone {
       display: none;
       left: 0; }
       @media (min-width: 46.25em) {
-        /* line 104, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+        /* line 109, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
         .hero .block .floating-phone {
           position: absolute;
           display: block;
@@ -326,52 +329,52 @@ a {
           width: 200px;
           top: 40px; } }
       @media (min-width: 61.9375em) {
-        /* line 104, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+        /* line 109, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
         .hero .block .floating-phone {
           width: 250px; } }
-    /* line 119, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    /* line 124, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
     .hero .block .badges {
       max-width: 150px; }
       @media (max-width: 21.865em) {
-        /* line 119, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+        /* line 124, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
         .hero .block .badges {
           max-width: 115px; } }
       @media (min-width: 21.875em) and (max-width: 46.24em) {
-        /* line 119, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+        /* line 124, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
         .hero .block .badges {
           max-width: 144px; } }
 
-/* line 134, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+/* line 139, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
 .logo-small {
   width: 100%;
   text-align: center;
   padding-bottom: 20px; }
-  @media (min-width: 20em) and (max-width: 21.865em) {
-    /* line 134, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
-    .logo-small {
-      margin-top: 15px; } }
-  /* line 146, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+  /* line 151, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
   .logo-small img {
     margin: 0 auto;
     max-width: 75px; }
+    @media (min-width: 20em) and (max-width: 21.865em) {
+      /* line 151, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+      .logo-small img {
+        max-width: 45px; } }
   @media (min-width: 46.25em) {
-    /* line 134, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    /* line 139, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
     .logo-small {
       display: none; } }
 
-/* line 156, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+/* line 165, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
 .arrow {
   text-align: left;
   margin-top: -20px; }
   @media (min-width: 46.25em) {
-    /* line 156, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+    /* line 165, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
     .arrow {
       display: none; } }
-  /* line 164, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+  /* line 173, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
   .arrow a {
     text-decoration: none; }
 
-/* line 168, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
+/* line 177, /Users/Andreas/www/sites/drago/sass/modules/_hero.scss */
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
