@@ -9,14 +9,14 @@ Drago collects information about you when you use our mobile applications, websi
 <h2>Scope and Application</h2>
 This Privacy Statement (“Statement") applies to persons anywhere in the world who use our apps or Services to request Health & Fitness and other on-demand services (“Users”). This Statement does not apply to information we collect from or about partner companies, or any other persons who use the Drago platform under license (collectively “Gyms”). If you interact with the Services as both a User and a Driver, the respective privacy statements apply to your different interactions.
 
-Collection of Information
-Information You Provide to Us
+<h3>Collection of Information</h3>
+<h3>Information You Provide to Us</h3>
 
 We collect information you provide directly to us, such as when you create or modify your account, request on-demand services, contact customer support, or otherwise communicate with us. This information may include: name, email, phone number, postal address, profile picture, payment method, and other information you choose to provide.
 
-Information We Collect Through Your Use of Our Services
+<h3>Information We Collect Through Your Use of Our Services</h3>
 
-When you use our Services, we collect information about you in the following general categories:
+<h3>When you use our Services, we collect information about you in the following general categories:</h3>
 
 Location Information: When you use the Services for Health & Fitness, we collect precise location data about the workout from the Drago app used by the Gyms. If you permit the Drago app to access location services through the permission system used by your mobile operating system (“platform”), we may also collect the precise location of your device when the app is running in the foreground or background. We may also derive your approximate location from your IP address.
 Contacts Information: If you permit the Dargo app to access the address book on your device through the permission system used by your mobile platform, we may access and store names and contact information from your address book to facilitate social interactions through our Services and for other purposes described in this Statement or at the time of consent or collection.
@@ -29,13 +29,13 @@ Important Information About Platform Permissions
 
 Most mobile platforms (iOS, Android, etc.) have defined certain types of device data that apps cannot access without your consent. And these platforms have different permission systems for obtaining your consent. The iOS platform will alert you the first time the Drago app wants permission to access certain types of data and will let you consent (or not consent) to that request. Android devices will notify you of the permissions that the Drago app seeks before you first use the app, and your use of the app constitutes your consent. To learn about the platform-level permissions that the app seeks, please visit our new iOS Permissions page and Android Permissions page. Sometimes these permissions require more explanation than the platforms themselves provide, and the permissions we request will change over time, so we’ve created these pages to serve as authoritative and up-to- date resources for our users.
 
-Information We Collect From Other Sources
+<h3>Information We Collect From Other Sources</h3>
 
 We may also receive information from other sources and combine that with information we collect through our Services. For example:
 
 If you choose to link, create, or log in to your Drago account with a payment provider (e.g., Google Wallet) or social media service (e.g., Facebook), or if you engage with a separate app or website that uses our API (or whose API we use), we may receive information about you or your connections from that site or app.
 Use of Information
-We may use the information we collect about you to:
+<h3>We may use the information we collect about you to:</h3>
 
 Provide, maintain, and improve our Services, including, for example, to facilitate payments, send receipts, provide products and services you request (and send related information), develop new features, provide customer support to Users and Gyms, develop safety features, authenticate users, and send product updates and administrative messages;
 Perform internal operations, including, for example, to prevent fraud and abuse of our Services; to troubleshoot software bugs and operational problems; to conduct data analysis, testing, and research; and to monitor and analyze usage and activity trends;
@@ -49,7 +49,7 @@ We may share the information we collect about you as described in this Statement
 
 Through Our Services
 
-We may share your information:
+<h3>We may share your information:</h3>
 
 With Gyms to enable them to provide the Services you request. For example, we share your name, photo (if you provide one), average User time spent at Gym, and check in/ check out times
 With third parties to provide you a service you requested through a partnership or promotional offering made by a third party or us;
