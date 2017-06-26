@@ -4,7 +4,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Drago</title>
+
+
+        <meta property="fb:app_id" content="596265087228467">
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Drago - Gyms by the minute" />
+        <meta property="og:description" content="The Drago App gives you access to local gyms, allowing you to workout on your own terms and simply pay for time spent. No memberships. No reservations." />
+        <meta property="og:url" content="http://drago.nyc" />
+        <meta property="og:site_name" content="Drago" />
+        <meta property="og:image" content="http://drago.anfessa.com/images/iphone_start.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:description" content="The Drago App gives you access to local gyms, allowing you to workout on your own terms and simply pay for time spent. No memberships. No reservations.">
+        <meta name="twitter:title" content="Drago - Gyms by the minute">
+
+
+  <title>Drago - Gyms by the minute</title>
 
   <link rel="shortcut icon" type="image/png" href="images/icons/favicon.png"/>
   <link href="images/icons/apple-touch-icon.png" rel="apple-touch-icon" />
