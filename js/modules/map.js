@@ -25,3 +25,15 @@
 
     $(window).bind('scroll', update);
   }
+  else {
+
+    // A little fix for cover backgroun on small devices
+    var bg = $("#map");
+
+    function resizeBackground() {
+        bg.height($(window).height() + 100);
+    }
+
+    $(window).resize(resizeBackground);
+    resizeBackground();
+  }

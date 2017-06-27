@@ -1,3 +1,4 @@
+
 // ---------
   // Did someone say submit?
   // ------
@@ -45,6 +46,16 @@
     map.css({"margin-top": '-' + Math.round((he - dos) * velocity) +  'px'});
 
     $(window).bind('scroll', update);
+  }
+  else {
+    var bg = $("#map");
+
+    function resizeBackground() {
+        bg.height($(window).height() + 60);
+    }
+
+    $(window).resize(resizeBackground);
+    resizeBackground();
   }
 // ------
 // Wey, a modal!
