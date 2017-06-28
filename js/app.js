@@ -96,4 +96,3 @@ window.onclick = function(event) {
         privacyModal.style.display = "none";
     }
 }
-

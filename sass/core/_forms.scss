@@ -55,6 +55,7 @@
 	padding: 15px 30px;
 	font-weight: 500;
 	@include border-radius(8px);
+	cursor: pointer;
 
 	&.btn-right {
 		float: right;

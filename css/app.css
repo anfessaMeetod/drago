@@ -199,8 +199,9 @@ a {
   -o-border-radius: 8px;
   border-radius: 8px;
   background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */ }
-  /* line 59, /Users/anfessa/http/drago/sass/core/_forms.scss */
+  /* stops bg color from leaking outside the border: */
+  cursor: pointer; }
+  /* line 60, /Users/anfessa/http/drago/sass/core/_forms.scss */
   .btn.btn-right {
     float: right;
     right: 0; }
