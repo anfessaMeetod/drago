@@ -214,6 +214,7 @@
        <div class="input">
          <label>your email</label>
          <input type="text" name="email" id="email">
+         <span class="validation"></span>
        </div>
        <div class="input">
          <label>your message</label>
